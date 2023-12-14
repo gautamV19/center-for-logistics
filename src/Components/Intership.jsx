@@ -17,15 +17,17 @@ export default function LicenseCard() {
         boxShadow: "lg",
         width: 400,
         maxWidth: "100%",
-        // to make the demo resizeable
-        overflow: "auto",
-        resize: "horizontal",
+        backgroundColor: "aliceblue",
       }}
     >
       <CardContent>
-        <Typography level="title-lg">Logistics Lab</Typography>
-        <Typography level="subtitle-lg">Software Developer</Typography>
-        <Typography level="body-md">
+        <Typography level="title-lg" sx={{ color: "black" }}>
+          Logistics Lab
+        </Typography>
+        <Typography level="subtitle-lg" sx={{ color: "black" }}>
+          Software Developer
+        </Typography>
+        <Typography level="body-md" sx={{ color: "grey" }}>
           This is company introduction and This is the job description. Lorem
           ipsum dolor sit amet consectetur adipisicing elit.
         </Typography>

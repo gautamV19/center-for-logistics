@@ -9,7 +9,7 @@ import news1 from '../Assets/Images/Home/news1.jpg'
 
 export default function MediaCard({ img, title }) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: "aliceblue" }}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={img || news1}

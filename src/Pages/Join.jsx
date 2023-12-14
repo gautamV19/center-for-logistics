@@ -13,7 +13,7 @@ import InternCard from "../Components/Intership";
 
 export default function Join() {
   return (
-    <Grid container direction={"column"} alignItems="center" spacing={2}>
+    <Grid container direction={"column"} alignItems="center" spacing={3} mt={1}>
       <Grid
         item
         container
@@ -81,18 +81,29 @@ export default function Join() {
           alignItems={"center"}
         >
           <Grid item>
-            <Button variant="contained" size="large">
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                backgroundColor: "#660099",
+                fontSize: "1.5rem",
+                fontWeight: "400",
+              }}
+            >
               Register
             </Button>
           </Grid>
           <Grid item>
-            <Button variant="contained" size="large">
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                backgroundColor: "#660099",
+                fontSize: "1.5rem",
+                fontWeight: "400",
+              }}
+            >
               Buy Solution
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button variant="contained" size="large">
-              Set up RnD
             </Button>
           </Grid>
         </Grid>
@@ -102,9 +113,10 @@ export default function Join() {
           justifyContent={"center"}
           alignItems={"center"}
           flexDirection={"column"}
+          spacing={2}
         >
           <Grid item>
-            <Typography variant="h4">Testinomials</Typography>
+            <Typography variant="h3">Testinomials</Typography>
           </Grid>
           <Grid item container justifyContent={"space-around"}>
             <TestinomialCard />
@@ -113,9 +125,9 @@ export default function Join() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item container direction="column" alignItems="center">
+      <Grid item container direction="column" alignItems="center" spacing={2}>
         <Grid Item>
-          <Typography variant="h3">For Students...</Typography>
+          <Typography variant="h2">For Students...</Typography>
         </Grid>
         <Grid item container justifyContent={"space-evenly"} spacing={3}>
           <Grid item>
@@ -140,7 +152,7 @@ export default function Join() {
       </Grid>
       <Grid item container direction="column" alignItems="center">
         <Grid Item>
-          <Typography variant="h3">For Researchers...</Typography>
+          <Typography variant="h2">For Researchers...</Typography>
         </Grid>
         <Grid item container justifyContent={"space-evenly"} spacing={3}>
           <Grid item>

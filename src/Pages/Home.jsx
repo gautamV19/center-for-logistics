@@ -43,15 +43,19 @@ export default function Home() {
       alignItems={"center"}
       flexDirection={"column"}
       spacing={2}
+      mt={1}
     >
       <Grid item width={"1200px"}>
         <Carousel
           NextIcon={<ArrowForwardIosIcon />}
           PrevIcon={<ArrowBackIosNewIcon />}
           fullHeightHover
-          interval={3000}
+          duration={500}
           height={"80vh"}
           width={"1200px"}
+          cycleNavigation={true}
+          swipe={true}
+          animation={"slide"}
         >
           {items.map((item, i) => (
             <Item key={i} item={item} />
@@ -66,7 +70,7 @@ export default function Home() {
         spacing={2}
       >
         <Grid item>
-          <Typography variant="h2" color="initial">
+          <Typography variant="h2" sx={{ color: "#660099", fontWeight: 800 }}>
             Top News
           </Typography>
         </Grid>
@@ -84,7 +88,7 @@ export default function Home() {
         spacing={2}
       >
         <Grid item>
-          <Typography variant="h2" color="initial">
+          <Typography variant="h2" sx={{ color: "#660099", fontWeight: 800 }}>
             About Us
           </Typography>
         </Grid>
@@ -97,9 +101,16 @@ export default function Home() {
               style={{ borderRadius: "10px" }}
             />
           </Grid>
-          <Grid item xs={5} container>
+          <Grid
+            item
+            xs={6}
+            flexDirection={"column"}
+            container
+            justifyContent={"space-evenly"}
+            sx={{ color: "#ff6600" }}
+          >
             <Grid item>
-              <Typography variant="body1">
+              <Typography variant="h5">
                 We, at the Department of Computer Science and Engineering, IIT
                 Madras, are working towards making logistics operations more
                 efficient and sustainable by using state-of-the-art algorithms
@@ -107,7 +118,7 @@ export default function Home() {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="body1">
+              <Typography variant="h5">
                 Having built route optimizing, vehicle allocation, ride/space
                 sharing, orienteering algorithms for the last 4 years, we have
                 integrated all into a SaaS software service. We look to improve
@@ -116,7 +127,7 @@ export default function Home() {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="body1">
+              <Typography variant="h5">
                 You can join us if this field seems interesting to you.
               </Typography>
             </Grid>
@@ -131,7 +142,9 @@ export default function Home() {
         spacing={2}
       >
         <Grid item>
-          <Typography variant="h2">Activites</Typography>
+          <Typography variant="h2" sx={{ color: "#660099", fontWeight: 800 }}>
+            Activites
+          </Typography>
         </Grid>
         <Grid item container justifyContent={"space-evenly"}>
           <Grid item xs={5}>
@@ -142,46 +155,41 @@ export default function Home() {
               style={{ borderRadius: "10px" }}
             />
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={6} sx={{ color: "#ff6600" }}>
             <List>
               <ListItem>
-                <Typography variant="h6">
+                <Typography variant="h5">
                   Workshops and Training Programmes
                 </Typography>
               </ListItem>
               <ListItem>
-                <Typography variant="h6">
+                <Typography variant="h5">
                   Research - PhD and MS (by Research)
                 </Typography>
               </ListItem>
               <ListItem>
-                <Typography variant="h6">
+                <Typography variant="h5">
                   Internships and research experience
                 </Typography>
               </ListItem>
               <ListItem>
-                <Typography variant="h6">
+                <Typography variant="h5">
                   Grand challenges for innovative ideas
                 </Typography>
               </ListItem>
               <ListItem>
-                <Typography variant="h6">
+                <Typography variant="h5">
                   Fostering start-ups in the logistics sector​
                 </Typography>
               </ListItem>
               <ListItem>
-                <Typography variant="h6">
+                <Typography variant="h5">
                   Software prototype development for the logistic sector​
                 </Typography>
               </ListItem>
             </List>
           </Grid>
         </Grid>
-      </Grid>
-      <Grid item>
-        <Button variant="contained" sx={{ fontSize: "30px" }}>
-          Join Us
-        </Button>
       </Grid>
     </Grid>
   );

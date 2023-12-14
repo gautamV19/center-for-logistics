@@ -39,7 +39,7 @@ function Header() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{ backgroundColor: '#FFD099' }}>
             <Container maxWidth="xl">
                 <Toolbar >
                     <Box sx={{ flexGrow: 0 }}>
@@ -60,13 +60,13 @@ function Header() {
                                 onClick={() => {
                                     (page === "Home") ? navigate("/") : navigate(`/${page.toLowerCase()}`);
                                 }}
-                                sx={{ my: 2, color: "white", display: "block" }}
+                                sx={{ color: '#660099', fontSize: "1.4rem", fontWeight: 500 }}
                             >
                                 {page}
                             </Button>
                         ))}
                     </Box>
-                    <Button variant="contained" onClick={() => {
+                    <Button variant="contained" sx={{ backgroundColor: "#660099", fontSize: "1.2rem" }} onClick={() => {
                         navigate('/join');
                     }}>
                         Join

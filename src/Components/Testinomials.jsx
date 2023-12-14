@@ -16,6 +16,7 @@ export default function BottomActionsCard() {
       variant="outlined"
       sx={{
         width: 320,
+        backgroundColor: "aliceblue",
       }}
     >
       <Box
@@ -25,7 +26,7 @@ export default function BottomActionsCard() {
           alignItems: "center",
         }}
       >
-        <Avatar src="/static/images/avatar/1.jpg" size="lg" />
+        <Avatar size="lg">GV</Avatar>
       </Box>
       <CardContent>
         <Typography level="title-lg">OptRoute Logistics</Typography>
