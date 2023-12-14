@@ -24,19 +24,19 @@ export default function Footer() {
                         <Link
                             to="#"
                             onClick={(e) => {
-                                window.location.href = "mailto:thegautam.vaja@gmail.com";
+                                window.location.href = "mailto:swamy@cse.iitm.ac.in";
                                 e.preventDefault();
                             }}
                             style={{ textDecoration: "none" }}
                         >
                             <Typography variant="h6" >
-                                thegautam.vaja@gmail.com
+                                swamy@cse.iitm.ac.in
                             </Typography>
                         </Link>
                     </Grid>
                     <Grid item>
                         <Typography variant="h5">
-                            Follow me
+                            Follow
                         </Typography>
 
                         <Grid item container spacing={1}>

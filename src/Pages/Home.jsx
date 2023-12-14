@@ -5,12 +5,15 @@ import { Paper, Button, Typography } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 
 import s1 from "../Assets/Images/Carrosuel/s1.png";
 import s2 from "../Assets/Images/Carrosuel/s2.png";
 import MediaCard from "../Components/MediaCard";
 import about from "../Assets/Images/Home/about.jpg";
 import Galary from "../Components/Galary";
+import activity from "../Assets/Images/Home/activity.jpg";
 
 function Item(props) {
   return (
@@ -117,6 +120,61 @@ export default function Home() {
                 You can join us if this field seems interesting to you.
               </Typography>
             </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid
+        item
+        container
+        alignItems={"center"}
+        flexDirection={"column"}
+        spacing={2}
+      >
+        <Grid item>
+          <Typography variant="h2">Activites</Typography>
+        </Grid>
+        <Grid item container justifyContent={"space-evenly"}>
+          <Grid item xs={5}>
+            <img
+              src={activity}
+              alt="any123"
+              width={"100%"}
+              style={{ borderRadius: "10px" }}
+            />
+          </Grid>
+          <Grid item xs={5}>
+            <List>
+              <ListItem>
+                <Typography variant="h6">
+                  Workshops and Training Programmes
+                </Typography>
+              </ListItem>
+              <ListItem>
+                <Typography variant="h6">
+                  Research - PhD and MS (by Research)
+                </Typography>
+              </ListItem>
+              <ListItem>
+                <Typography variant="h6">
+                  Internships and research experience
+                </Typography>
+              </ListItem>
+              <ListItem>
+                <Typography variant="h6">
+                  Grand challenges for innovative ideas
+                </Typography>
+              </ListItem>
+              <ListItem>
+                <Typography variant="h6">
+                  Fostering start-ups in the logistics sector​
+                </Typography>
+              </ListItem>
+              <ListItem>
+                <Typography variant="h6">
+                  Software prototype development for the logistic sector​
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
         </Grid>
       </Grid>
