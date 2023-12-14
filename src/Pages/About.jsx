@@ -4,6 +4,8 @@ import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import TextCard from "../Components/TextCard";
+import { focus, impact } from "../Assets/Data/aboutData";
 
 export default function About() {
   return (
@@ -32,7 +34,6 @@ export default function About() {
         item
         container
         direction={"column"}
-        alignItems="flex-start"
         justifyContent={"center"}
         spacing={0}
         width={"50%"}
@@ -97,11 +98,54 @@ export default function About() {
           </Typography>
         </Grid>
       </Grid>
-      <Grid item>
-        <Typography variant="h2">Focus</Typography>
+      <Grid
+        item
+        container
+        justify="center"
+        alignItems="center"
+        direction={"column"}
+        width={"100%"}
+      >
+        <Grid item>
+          <Typography variant="h2">Focus</Typography>
+        </Grid>
+        <Grid item container justifyContent={"space-around"}>
+          {focus.map((item) => (
+            <Grid item key={item.title}>
+              <TextCard title={item.title} description={item.description} />
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
-      <Grid item>
-        <Typography variant="h2">Impact</Typography>
+      <Grid
+        item
+        container
+        justify="center"
+        alignItems="center"
+        direction={"column"}
+        width={"100%"}
+      >
+        <Grid
+          item
+          container
+          justify="center"
+          alignItems="center"
+          direction={"column"}
+          spacing={2}
+        >
+          <Typography variant="h2">Impact</Typography>
+          <Typography variant="h4" sx={{ width: "80%", textAlign: "center" }}>
+            Foremost/Leading industry-academia bridge, producing novel
+            technologies which will become global standards to
+          </Typography>
+          <Grid item container justifyContent={"space-around"}>
+            {impact.map((item) => (
+              <Grid item key={item.title}>
+                <TextCard title={item.title} description={item.description} />
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );
