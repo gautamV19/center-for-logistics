@@ -1,6 +1,23 @@
 import React from "react";
+import Grid from "@mui/material/Grid";
+import BioCard from "../Components/BioCard";
+import { faculty } from "../Assets/Data/peopleData";
 
-// use bio card from https://mui.com/joy-ui/react-card/
 export default function People() {
-  return <div>People</div>;
+  return (
+    <Grid container justifyContent={"space-evenly"} spacing={3} mt={3}>
+      {faculty.map((person) => (
+        <Grid item key={person.name}>
+          <BioCard
+            img={person.img}
+            name={person.name}
+            department={person.department}
+            area={person.area}
+            email={person.email}
+            website={person.website}
+          />
+        </Grid>
+      ))}
+    </Grid>
+  );
 }
