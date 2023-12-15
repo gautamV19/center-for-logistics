@@ -11,8 +11,9 @@ export default function Events() {
       direction={"column"}
       justify="center"
       alignItems="center"
+      mt={1}
     >
-      <Typography variant="h1" color="initial">
+      <Typography variant="h2" sx={{ color: "#660099", fontWeight: 800 }}>
         Webinars
       </Typography>
       <Grid container item justifyContent={"space-around"} spacing={5}>
