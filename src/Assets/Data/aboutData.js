@@ -5,16 +5,15 @@ export const focus = [
     },
     {
         title: "Digital Transformation in Logistics",
-        description: ["Integrated logistics management", "Dynamic, predictive and prescriptive analytics",
-            "Privacy and tracking together"],
+        description: ["Integrated logistics management", "Dynamic, predictive and prescriptive analytics"],
     },
     {
         title: "Industry-specific Applications and Last-mile",
-        description: ["Manufacturing, healthcare, agro, and cold-chain", "Multi-modal logistics - ship, air, road, rail, drone, EV", "Temperature controlled transportation"],
+        description: ["Manufacturing, healthcare, agro, and cold-chain", "Multi-modal logistics - ship, air, road, rail, drone, EV"],
     },
     {
         title: "Socially Sustainable Logistics",
-        description: ["Driver wellness and safety", "Warehouse worker wellness and safety via use of mechanization", "Reliable logistics"],
+        description: ["Driver wellness and safety", "Warehouse worker wellness and safety via use of mechanization"],
     }
 ]
 
