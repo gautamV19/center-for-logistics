@@ -26,7 +26,7 @@ export default function BioCard({
   return (
     <Card
       sx={{
-        width: 320,
+        width: 300,
         maxWidth: "100%",
         boxShadow: "lg",
         backgroundColor: "aliceblue",
@@ -51,19 +51,6 @@ export default function BioCard({
             variant="outlined"
             sx={{ bgcolor: "background.surface" }}
           >
-            <Button
-              onClick={() =>
-                navigate(
-                  `/people/${name
-                    .toLowerCase()
-                    .split(" ")
-                    .join("-")
-                    .replace(".", "")}`
-                )
-              }
-            >
-              Learn More
-            </Button>
             <Button
               onClick={() => {
                 console.log(website);

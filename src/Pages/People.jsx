@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import BioCard from "../Components/BioCard";
-import { faculty } from "../Assets/Data/peopleData";
+import { faculty, governingBoard } from "../Assets/Data/peopleData";
 
 export default function People() {
   return (
@@ -33,10 +33,10 @@ export default function People() {
         ))}
       </Grid>
       <Typography variant="h2" sx={{ color: "#660099", fontWeight: 800 }}>
-        Investors
+        Governing Board
       </Typography>
       <Grid container justifyContent={"space-evenly"} spacing={3} mt={1} mb={1}>
-        {faculty.map((person) => (
+        {governingBoard.map((person) => (
           <Grid item key={person.name}>
             <BioCard
               img={person.img}

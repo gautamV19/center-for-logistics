@@ -111,10 +111,9 @@ export default function Home() {
           >
             <Grid item>
               <Typography variant="h5">
-                We, at the Department of Computer Science and Engineering, IIT
-                Madras, are working towards making logistics operations more
-                efficient and sustainable by using state-of-the-art algorithms
-                and technologies.
+                We, at the IIT Madras, are working towards making logistics
+                operations more efficient and sustainable by using
+                state-of-the-art algorithms and technologies.
               </Typography>
             </Grid>
             <Grid item>

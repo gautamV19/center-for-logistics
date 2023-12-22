@@ -12,30 +12,15 @@ export default function Events() {
       justify="center"
       alignItems="center"
       mt={1}
+      height={"90vh"}
     >
       <Typography variant="h2" sx={{ color: "#660099", fontWeight: 800 }}>
-        Webinars
+        We will be having events soon!
       </Typography>
-      <Grid container item justifyContent={"space-around"} spacing={5}>
-        <Grid item>
-          <MediaCard img={event} title={"Inter-Modal Hub Networks​"} />
-        </Grid>
-        <Grid item>
-          <MediaCard title={"Warehouse Network Operations​"} />
-        </Grid>
-        <Grid item>
-          <MediaCard img={event} title={"Optimal EV Charging Networks"} />
-        </Grid>
-        <Grid item>
-          <MediaCard title={"Inter-Modal Hub Networks​"} />
-        </Grid>
-        <Grid item>
-          <MediaCard img={event} title={"Warehouse Network Operations​"} />
-        </Grid>
-        <Grid item>
-          <MediaCard title={"Optimal EV Charging Networks"} />
-        </Grid>
-      </Grid>
+      <Typography variant="h5" sx={{ color: "#660099" }}>
+        Topics will be Optimal EV Charging Networks, Inter-Modal Hub Networks,
+        Warehouse Network Operations, etc.
+      </Typography>
     </Grid>
   );
 }

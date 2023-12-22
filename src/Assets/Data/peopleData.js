@@ -6,6 +6,8 @@ import img5 from "../Images/people/ArshinderKaur.jpg";
 import img6 from "../Images/people/Rajendran.jpg";
 import img7 from "../Images/people/ravi.jpg";
 import img8 from "../Images/people/swamy.jpg";
+import img9 from "../Images/people/maheshP.jpg";
+import img10 from "../Images/people/kama.jpg";
 
 export const faculty = [{
     name: "Dr. Gitakrishnan Ramadurai",
@@ -58,7 +60,7 @@ export const faculty = [{
 {
     name: "Dr. B. Ravindran",
     img: img7,
-    department: "Computer Science and Engineering",
+    department: "Computer Science",
     area: "Logistics : Proving Ground for Reinforcement Learning",
     email: "ravib@iitm.ac.in",
     website: "https://www.cse.iitm.ac.in/~ravi"
@@ -66,9 +68,40 @@ export const faculty = [{
 {
     name: "Dr. N.S. Narayanaswamy",
     img: img8,
-    department: "Computer Science and Engineering",
+    department: "Computer Science",
     area: "Algorithms for packing and routing",
     email: "swamy@cse.iitm.ac.in",
     website: "https://www.cse.iitm.ac.in/~swamy"
 }
+]
+
+export const governingBoard = [
+    {
+        name: "Dr. N.S. Narayanaswamy",
+        img: img8,
+        department: "Computer Science",
+        email: "swamy@cse.iitm.ac.in",
+        website: "https://www.cse.iitm.ac.in/~swamy"
+    },
+    {
+        name: "Dr. Arshinder Kaur",
+        img: img5,
+        department: "Management Studies",
+        email: "arshinder@iitm.ac.in",
+        website: "https://doms.iitm.ac.in/index.php/arshinder-kaur"
+    },
+    {
+        name: "Mahesh Panchagnula",
+        img: img9,
+        department: "Dean (Alumni & Corporate Relations)",
+        email: "deanacr@iitm.ac.in",
+        website: "https://home.iitm.ac.in/mvp/"
+    },
+    {
+        name: "V. Kamakoti",
+        img: img10,
+        department: "Director, IIT Madras",
+        email: "kama@cse.iitm.ac.in",
+        website: "http://www.cse.iitm.ac.in/profile.php?arg=MTg="
+    }
 ]

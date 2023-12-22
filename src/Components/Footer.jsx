@@ -93,7 +93,7 @@ export default function Footer() {
         </Grid>
         <Grid item>
           <Typography variant="h6" sx={{ color: "#660099" }}>
-            © 2025 By Center For Logistics IIT Madras
+            © 2028 By Center For Logistics IIT Madras
           </Typography>
         </Grid>
       </Grid>
